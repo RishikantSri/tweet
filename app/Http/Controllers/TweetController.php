@@ -16,8 +16,10 @@ class TweetController extends Controller
     // public function index(): Response
     public function index(): View
     {
-        // return response('Hello, World!');
-        return view('tweets.index');
+    
+        return view('tweets.index', [
+            'tweets' => Tweet::with('user')->latest()->get(),
+        ]);
     }
 
     /**
