@@ -12,32 +12,41 @@
 - **[Tweet: Notifications, Event, Listner, Event Listner, Event Provider ](https://github.com/RishikantSri/tweet/commit/484d9bc72a2c0653bc9a02ea6fe3b09e18507c91)**
 
 Installtion Steps 
-******************
 
-a) Clone repository 
-b) Copu .env.example to .enve file, update .env file
-c) Run these commands in terminal 
-    1) npm install 
-    2) npm run dev
-    3) composer install 
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-    4) create app key
-        php artisan key:generate
-    5)  migrate tables
-        php artisan migrate 
-    6)  create users,comment out in database\seeders\DatabaseSeeder.php
-        password => password    
+1. Clone repository 
+1. Copu .env.example to .enve file, update .env file
+1. Run these commands in terminal 
+   1. npm install 
+   1. npm run dev
+   1. composer install 
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Tweet User1',
-        //     'email' => 'tweetuser1@example.com',
-        // ]);
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Tweet User2',
-        //     'email' => 'tweetuser2@example.com',
-        // ]);
+1. create app key
+1. php artisan key:generate
+   1. migrate tables
+1. php artisan migrate 
+   1. create users,comment out in database\seeders\DatabaseSeeder.php
+1. password => password    
 
-        php artisan db:seed --class=DatabaseSeeder
+// \App\Models\User::factory()->create([
 
-d) Login using above credentials or register new user
+//     'name' => 'Tweet User1',
+
+//     'email' => 'tweetuser1@example.com',
+
+// ]);
+
+// \App\Models\User::factory()->create([
+
+//     'name' => 'Tweet User2',
+
+//     'email' => 'tweetuser2@example.com',
+
+// ]);
+
+1. php artisan db:seed --class=DatabaseSeeder
+
+1. Login using above credentials or register new user
+
 
