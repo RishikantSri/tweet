@@ -11,3 +11,33 @@
 - **[Tweet : Delete Tweet, Policy and Authorization](https://github.com/RishikantSri/tweet/commit/6949ba796a94e933b16773b09da18e00b860d188)**
 - **[Tweet: Notifications, Event, Listner, Event Listner, Event Provider ](https://github.com/RishikantSri/tweet/commit/484d9bc72a2c0653bc9a02ea6fe3b09e18507c91)**
 
+Installtion Steps 
+******************
+
+a) Clone repository 
+b) Copu .env.example to .enve file, update .env file
+c) Run these commands in terminal 
+    1) npm install 
+    2) npm run dev
+    3) composer install 
+
+    4) create app key
+        php artisan key:generate
+    5)  migrate tables
+        php artisan migrate 
+    6)  create users,comment out in database\seeders\DatabaseSeeder.php
+        password => password    
+
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Tweet User1',
+        //     'email' => 'tweetuser1@example.com',
+        // ]);
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Tweet User2',
+        //     'email' => 'tweetuser2@example.com',
+        // ]);
+
+        php artisan db:seed --class=DatabaseSeeder
+
+d) Login using above credentials or register new user
+
